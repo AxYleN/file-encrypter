@@ -26,7 +26,7 @@ function setFileText() {
 }
 
 function overlayVisible(val) {
-  form.overlay.style.display = val ? 'initial' : 'none';
+  form.overlay.style.display = val ? 'flex' : 'none';
   form.encryptBtn.disabled = val;
   form.decryptBtn.disabled = val;
   form.key.disabled = val;
