@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Шифратор</title>
+  </head>
+  <body>
+    <h1>
+      Шифратор
+    </h1>
+    <label class="file-group">
+      <span id="file-text">Выбрать файл</span>
+      <input type="file" id="file" />
+    </label>
+
+    <label class="key-group">
+      Ключ шифрования
+      <input
+        type="text"
+        id="key"
+        placeholder="Ключ шифрования"
+        maxlength="24"
+      />
+    </label>
+
+    <div class="button-group">
+      <button class="btn" id="encrypt">Зашифровать</button>
+      <button class="btn" id="decrypt">Расшифровать</button>
+    </div>
+
+    <div class="overlay" style="display: none">
+      <div class="loader">Подождите...</div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
