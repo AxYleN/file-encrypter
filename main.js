@@ -9,12 +9,7 @@ const form = {
 };
 
 function isFileSelected() {
-  if (!form.file.files || !form.file.files[0]) return false;
-
-  if (form.file.files[0].type != '') return true;
-
-  form.file.value = '';
-  return false;
+  return form.file.files && form.file.files[0];
 }
 
 function setFileText() {
